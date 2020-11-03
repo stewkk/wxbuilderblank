@@ -5,11 +5,11 @@ cmake_minimum_required(VERSION 3.13)
 
 project(test)
 
-set(SOURCE_EXE main.cpp)
+set(SOURCE_EXE src/main.cpp)
 
-set(SOURCE_LIB ui.cpp)
+set(SOURCE_LIB src/ui.cpp)
 
-#add_compile_options(-fpermissive -D _LINUX)
+set( CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 add_library(ui STATIC ${SOURCE_LIB})
 
